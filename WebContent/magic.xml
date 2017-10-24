@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    
+    <bean name="/category/create.action" class="com.control.category.CreateCategoryController"></bean>
+    <bean name="/category/delete.action" class="com.control.category.DeleteCategoryController"></bean>
+    <bean name="/category/query.action" class="com.control.category.QueryCategoryController"></bean>
+    <bean name="/category/queryaj.action" class="com.control.category.QueryCategoryAjaxController"></bean>
+    
+    <bean name="/production/create.action" class="com.control.production.CreateProductionController"></bean>
+<!--     <bean name="/production/querybycategory.action" class="com.control.production.QueryProductionByCategoryController"></bean> -->
+    <bean name="/production/finished.action" class="com.control.production.FinishedProductionController"></bean>
+    <bean name="/production/begin_edit.action" class="com.control.production.BeginEditController"></bean>
+    
+    <bean name="/production/query_for_edit.action" class="com.control.production.query.QueryProductionByIDForEditController"></bean>
+    <bean name="/production/delete.action" class="com.control.production.DeleteProductionController"></bean>
+    <bean name="/production/online.action" class="com.control.production.OnlineProductionController"></bean>
+    <bean name="/production/offshelt.action" class="com.control.production.OffsheltProductionController"></bean>
+    <bean name="/produciton/uploadpro.action" class= "com.control.production.UploadProductionController"></bean>
+    <bean name="/production/edit.action" class="com.control.production.EditProductionController"></bean>
+    
+    <bean name="/production/mainpic.action" class="com.control.production.pic.UpdateProductionMainPicController"></bean>
+    <bean name="/production/deletepic.action" class="com.control.production.pic.DeleteProductionPicController"></bean>
+    <bean name="/production/querypic.action" class="com.control.production.pic.QueryProductionPicController"></bean>
+    <bean name="/production/editpic.action" class="com.control.production.pic.BeginEditProductionPicController"></bean>
+    <bean name="/production/begin_update_detail.action" class="com.control.production.BeginUpdateProductionDetailController"></bean>
+    <bean name="/production/update_detaill.action" class="com.control.production.UpdateProductionDetailController"></bean>
+    <bean name="/production/querydetail.action" class="com.control.production.query.QueryProductionDetailController"></bean>
+     
+    <bean name="/store/login.action" class="com.control.store.StoreLoginController"></bean>
+    <bean name="/store/query_main.action" class="com.control.store.QueryMainController"></bean>
+    <bean name="/store/queryallproduction.action" class="com.control.store.QueryAllStoreProductionController"></bean>
+    <bean name="/store/queryoffsheltproducton.action" class="com.control.production.query.QueryAllCanOnlineProductionController"></bean>
+    <bean name="/store/queryallcaneditproduction.action" class="com.control.production.query.QueryAllCanEditProductionController"></bean>
+    <bean name="/store/queryallcandeleteproduction.action" class="com.control.production.query.QueryAllCanDeleteProductionController"></bean>
+    <bean name="/store/queryallcanoffsheltproduction.action" class="com.control.production.query.QueryAllCanOffsheltProductionController"></bean>
+    <bean name="/store/createpayinfo.action" class="com.control.store.CreatePayInfoController"></bean>
+    <bean name="/store/createwxinfo.action" class="com.control.store.CreateWxInfoController"></bean>
+    <bean name="/store/queryshoppic.action" class="com.control.store.QueryStorePicController"></bean>
+    <bean name="/store/deletepic.action" class="com.control.store.DeleteStorePicController"></bean>
+    <bean name="/store/querywxpayinfo.action" class="com.control.store.QueryWxPayInfoController"></bean>
+    <bean name="/store/querywxinfo.action" class="com.control.store.QueryWxInfoController"></bean>
+    <bean name="/store/updatedetail.action" class="com.control.store.UpdateStoreDetailController"></bean>
+    <bean name="/store/querydetail.action" class="com.control.store.QueryStoreDetailController"></bean>
+    
+    
+    <bean name="/order/queryall.action" class="com.control.order.query.QueryAllOrderController"></bean>
+    <bean name="/order/querynew.action" class="com.control.order.query.QueryPayedOrderController"></bean>
+    <bean name="/order/queryfinish.action" class="com.control.order.query.QueryFinishedOrderController"></bean>
+    <bean name="/order/querypre.action" class="com.control.order.query.QueryPrePayOrderController"></bean>
+    <bean name="/order/querydeliver.action" class="com.control.order.query.QueryOnRoadOrderController"></bean>
+    <bean name="/order/querydetail.action" class="com.control.order.query.QueryOrderByIDController"></bean>
+    <bean name="/order/querycancle.action" class="com.control.order.query.QueryCancleOrderController"></bean>
+    <bean name="/order/detail.action" class="com.control.order.query.QueryOrderByIDController"></bean>
+    
+    <bean name="/order/cancle.action" class="com.control.order.CancleOrderController"></bean>
+    <bean name="/order/delivery.action" class="com.control.order.DeliverOrderController"></bean>
+    <bean name="/order/finished.action" class="com.control.order.FinishedOrderController"></bean>
+    
+    <bean name="/user/changepassword.action" class="com.control.user.ChangePasswordController"></bean>
+    
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="200000000000" />
+	</bean>	
+</beans>

@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords"
+	contect="富文本,富文本编辑器,富文本框,在线编辑器,html,web,javascript">
+<meta name="Description" contect="wangEditor - 轻量级web富文本编辑器">
+<title>wangEditor - 轻量级web富文本编辑器</title>
+
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+<!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="fontawesome-4.2.0/css/font-awesome-ie7.min.css">
+    <![endif]-->
+
+<link rel="stylesheet" type="text/css" href="common.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+	<div id="div1">
+	</div>
+	<button id="btn1">获取html</button>
+	<button id="btn2">获取text</button>
+	
+
+	<script type="text/javascript" src='jquery-1.10.2.min.js'></script>
+	<script type="text/javascript" src='bootstrap.min.js'></script>
+	<script type="text/javascript" src='wangEditor.min.js'></script>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript">
+		var E = window.wangEditor
+		var editor = new E('#div1')
+		editor.customConfig.uploadImgServer = 'http://magic.puckart.com/manager/MagicUpload?uuid=1111'
+		
+				editor.create()
+	     editor.txt.html('<p>要初始化的内容</p>');
+		document.getElementById('btn1').addEventListener('click', function() {
+			// 读取 html
+			alert(editor.txt.html())
+		}, false)
+
+		document.getElementById('btn2').addEventListener('click', function() {
+			// 读取 text
+			alert(editor.txt.text())
+		}, false)
+	</script>
+</body>
+</html>

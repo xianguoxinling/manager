@@ -1,0 +1,327 @@
+.content{
+	padding-bottom: 1px;
+    padding-top: 0;
+}
+
+.search-cond-tab{
+	margin-bottom: 10px;
+}
+
+.search-cond {
+    overflow: hidden;
+    padding: 10px 10px 0 10px;
+    border-bottom: solid 1px #cecece;
+    _height: 100%;
+}
+
+.search-cond a, .search-cond .current {
+    padding: 4px 15px;
+    text-align: center;
+    display: block;
+    border: solid 1px #cecece;
+    border-bottom: 0;
+    color: #333;
+    float: left;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #f6f6f6;
+    background: -moz-linear-gradient(top, #ffffff, #f6f6f6);
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#f6f6f6));
+    background: -o-linear-gradient(top, #ffffff, #f6f6f6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6');
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-cond a:hover, .search-cond .current {
+    color: #fff;
+    border: solid 1px #c60001;
+    border-bottom: 0;
+    background: #be0000;
+    background: -moz-linear-gradient(top, #e00000, #be0000);
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e00000), to(#be0000));
+    background: -o-linear-gradient(top, #e00000, #be0000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e00000', endColorstr='#be0000');
+}
+
+.search-cond .down em {
+    background: url(/images/ar-down.gif);
+    display: inline-block;
+    zoom: 1;
+    height: 11px;
+    margin-right: 5px;
+    width: 9px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.search-cond .up em {
+    background: url(/images/ar-up.gif);
+    display: inline-block;
+    zoom: 1;
+    height: 11px;
+    margin-right: 5px;
+    width: 9px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.empty-container{
+	height: 250px;
+	padding: 10px 50px;
+}
+.empty-container .empty-msg{
+	text-align: center;
+    line-height: 60px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: red;
+}
+.paginationBar{
+	padding: 0 50px;
+}
+.paginationBar .pages{
+	float:right；
+}
+.paginationBar .pages .pagination{
+	margin: 0px;
+}
+
+.sp-info a {
+    color: #333;
+}
+
+.sp-info .product-pic img{
+	height: 220px; 
+	max-width: 220px;
+}
+.sp-info .sp-name{
+	height: 24px;
+   	line-height: 24px;
+   	margin-bottom: 10px;
+   	overflow: hidden;
+   	display: block;
+   	word-break: break-all;
+   	word-wrap: break-word;
+   	padding: 5px 15px;
+}
+.sp-info .sp-ext{
+	height: 24px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.sp-info .sp-ext .price {
+    float: left;
+    margin-right: 6px;
+    color: #e4393c;
+    font-weight: 700;
+    font-family: verdana;
+    font-size: 14px;
+}
+
+.sp-info .sp-ext a {
+    float: right;
+    text-decoration: none;
+}
+
+.sp-info .sp-ext a:hover {
+    color: #e4393c;
+    text-decoration: none;
+}
+
+.condition-bar {
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 5px;
+    z-index: 6;
+}
+.condition-nav {
+    line-height: 24px;
+    padding-right: 125px;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.condition-nav-item {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.condition-first {
+    color: #999;
+    font-family: SimSun;
+}
+.condition-first a {
+    color: #666;
+    text-decoration: none;
+}
+.condition-first a:hover {
+    color: #C81623;
+}
+.condition-arrow {
+    float: left;
+    margin-right: 5px;
+    font-family: SimSun;
+    font-style: normal;
+}
+.condition-select-item {
+    position: relative;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #DDD;
+    font-size: 12px;
+    vertical-align: top;
+    margin: 0 5px 5px 0;
+    padding: 0 26px 0 4px;
+    cursor: pointer;
+    background: #f3f3f3;
+}
+.condition-select-item:hover {
+    border-color: #e4393c;
+    text-decoration: none;
+    background: #fff;
+}
+.condition-select-item b {
+    font-weight: 400;
+    color: #333;
+}
+.condition-select-item em {
+    color: #e4393c;
+}
+.condition-select-item i {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 22px;
+    right: 0;
+    top: 0;
+    background: url(/images/search.element.png) no-repeat 7px -140px;
+}
+.condition-select-item:hover i {
+    background-color: #e4393c;
+    background-position: 7px -158px;
+}
+.condition-nav-item .search-key {
+    margin-left: 5px;
+}
+
+.selector {
+    border-top: 1px solid #DDD;
+    background: #FFF;
+    margin-bottom: 10px;
+}
+.selector .s-line {
+    width: auto;
+    height: auto;
+}
+.selector .sl-wrap {
+    position: relative;
+    _zoom: 1;
+    line-height: 34px;
+    border-bottom: 1px solid #DDD;
+    background: #f3f3f3;
+}
+.selector .sl-key {
+    float: left;
+    width: 100px;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.selector .sl-value {
+    margin-left: 110px;
+    padding-right: 110px;
+    padding-left: 10px;
+    overflow: hidden;
+    zoom: 1;
+    background: #fff;
+}
+.selector .sl-v-list {
+    overflow: hidden;
+    zoom: 1;
+    padding-top: 4px;
+}
+.selector .sl-v-list ul {
+    float: left;
+    overflow: hidden;
+    zoom: 1;
+    position: relative;
+    height: 30px;
+}
+.selector .sl-v-list li {
+    float: left;
+    _display: inline;
+    margin-right: 40px;
+    margin-bottom: 4px;
+    height: 26px;
+    line-height: 26px;
+}
+.selector .sl-v-list li a {
+    float: left;
+    white-space: nowrap;
+    zoom: 1;
+    color: #005aa0;
+}
+.selector .sl-v-list li a:hover {
+    text-decoration: none;
+    color: #e4393c;
+}
+.selector .sl-v-list .sl-price {
+    float: left;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+.selector .sl-v-list .sl-price .input-txt {
+    width: 38px;
+    padding: 1px;
+    float: left;
+    height: 17px;
+	line-height: 17px;
+	border: 1px solid #CCC;
+}
+.selector .sl-v-list .sl-price em {
+    line-height: 21px;
+    padding: 0 2px;
+    color: #CCC;
+    float: left;
+    font-style: normal;
+}
+.selector .sl-v-list .sl-price .s-btn {
+    margin-left: 5px;
+    *display: inline;
+    padding: 2px 10px 3px;
+    float: left;
+    display: inline-block;
+	line-height: 14px;
+	height: 14px;
+	border-radius: 2px;
+	background: #F7F7F7;
+    background-color: rgb(247, 247, 247);
+    background-image: none;
+    background-repeat: repeat;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid #DDD;
+	color: #666;
+	background-color: #f7f7f7;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top,#f7f7f7,#f2f2f2);
+	background-image: -webkit-linear-gradient(top,#f7f7f7,#f2f2f2);
+	background-image: -o-linear-gradient(top,#f7f7f7,#f2f2f2);
+	background-image: linear-gradient(top,#f7f7f7,#f2f2f2);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#f2f2f2', GradientType=0);
+}
